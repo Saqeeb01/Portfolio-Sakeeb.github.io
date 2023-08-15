@@ -1,0 +1,47 @@
+.hero-img{
+     width: 100%;
+     background: rgba(0,0,0,.5);
+     height: 60vh;
+     position: relative;
+}
+
+.hero-img::before{
+    content: "";
+    background: url("https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?w=740&t=st=1689156813~exp=1689157413~hmac=ea47a774343be02b4829fdc7cae114073527885e37782ef919f3fc1ae60e1a56");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img h1{
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.hero-img p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 640px) {
+    .hero-img h1{
+        font-size: 2.4rem;
+    }
+
+}
